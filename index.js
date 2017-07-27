@@ -1,4 +1,4 @@
-var TIMEOUT_IN_SECS = 60
+var TIMEOUT_IN_SECS = 15*60
 var TEMPLATE = '<h1 id="timer"><span id="timer-minutes">00</span>:<span id="timer-seconds">00</span></h1>'
 
 // adds HTML tag to current page
