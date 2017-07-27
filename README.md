@@ -1,25 +1,25 @@
-# Timer for Websites That Steal Your Time
+# Таймер для веб-сайтов, которые крадут Ваше время
 
-This project helps to control time was spent on sites. It requires special extension for Chrome browser.
+Этот проект помогает контролировать время, потраченное на сайтах. Он требует установки специального расширения для Chrome.
 
-# Installing
+# Установки
 
-Install extension for Chrome browser [Custom JavaScript for websites](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija).
+Установите расширение для Chrome [Custom JavaScript for websites](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija).
 
-Open configuration of [cjs](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija) browser extension on the site you want to controll. Click on the link "your own external scripts", add path [TODO в качестве production хостинга файла с JavaScript подойдет GitHub - у каждого файла в репозитории есть свой URL, и этим можно воспользоваться]. Don`t forget to press "enable cjs for this host" to enable custom JS.
+Откройте настройки расширения [cjs](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija) на сайте, который вы хотите контролировать. Кликните на ссылку "your own external scripts", и добавьте эту ссылку [TODO LINK] Не забудьте поставить галочку "enable cjs for this host" чтобы включить кастомный JS.
 
-[TODO describe what will happen after that]
+На сайте появится таймер на 15 минут, по истечению которого каждые 30 секунд будет высвечиваться сообщение о том, что этот сайт пора закрыть.
 
-For faster development you can use JS code hosted on localhost. Simple web server can be used for that, run:
+Для более быстрой разработки используйсте JS, который хостится на localhost. Для этого подойдет обычный веб-сервер:
 
 ```bash
 
 python3 -m http.server
 ```
 
-Add path `http://localhost:8000/index.js` to [cjs](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija) browser extension. Done.
+Добавьте ссылку `http://localhost:8000/index.js` в расширение [cjs](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija). Готово.
 
 
 # Project Goals
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Этот код написан в образовательных целях. Тренировачный курс для веб-девелоперов - [DEVMAN.org](https://devman.org)
