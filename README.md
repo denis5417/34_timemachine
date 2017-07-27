@@ -6,7 +6,7 @@
 
 Установите расширение для Chrome [Custom JavaScript for websites](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija).
 
-Откройте настройки расширения [cjs](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija) на сайте, который вы хотите контролировать. Кликните на ссылку "your own external scripts", и добавьте эту ссылку [TODO LINK] Не забудьте поставить галочку "enable cjs for this host" чтобы включить кастомный JS.
+Откройте настройки расширения [cjs](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija) на сайте, который вы хотите контролировать. Кликните на ссылку "your own external scripts", и добавьте эту ссылку `https://cdn.rawgit.com/denis5417/34_timemachine/c217fd6d/index.js` Не забудьте поставить галочку "enable cjs for this host" чтобы включить кастомный JS.
 
 На сайте появится таймер на 15 минут, по истечению которого каждые 30 секунд будет высвечиваться сообщение о том, что этот сайт пора закрыть.
 
