@@ -34,7 +34,7 @@ function displayTimer(){
 }
 
 function timeOutAlert(){
-  setInterval(function() {alert( "АААА" );}, 30*1000);      
+  setInterval(function() {alert( "Хватит в интернетах своих сидеть! Иди делом займись!" );}, 30*1000);      
 }
 
 setInterval(displayTimer, 300)
