@@ -1,12 +1,14 @@
-var TIMEOUT_IN_SECS = 3 * 60
-var TEMPLATE = '<h1><span id="timer-minutes">00</span>:<span id="timer-seconds">00</span></h1>'
+var TIMEOUT_IN_SECS = 60
+var TEMPLATE = '<h1 id="timer"><span id="timer-minutes">00</span>:<span id="timer-seconds">00</span></h1>'
 
 // adds HTML tag to current page
 var timerContainer = document.createElement('div')
-timerContainer.setAttribute("style", "height: 100px;")
+timerContainer.setAttribute("style", "position: fixed; z-index: 1000; background-color: black; opacity: 0.6;")
 var bodyTag = document.body
 bodyTag.insertBefore(timerContainer, bodyTag.firstChild)
 timerContainer.innerHTML = TEMPLATE
+document.getElementById('timer').setAttribute("style", "color: white; font-size: 50px; background-color: black;")
+
 
 function getTimestampInSecs(){
   var timestampInMilliseconds = new Date().getTime()
@@ -30,4 +32,10 @@ function displayTimer(){
   document.getElementById('timer-minutes').innerHTML = padZero(minutes)
   document.getElementById('timer-seconds').innerHTML = padZero(seconds)
 }
+
+function timeOutAlert(){
+  setInterval(function() {alert( "АААА" );}, 30*1000);      
+}
+
 setInterval(displayTimer, 300)
+setTimeout(timeOutAlert, TIMEOUT_IN_SECS*1000)
